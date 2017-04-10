@@ -1,0 +1,22 @@
+body {
+  background-color: #263238;
+}
+body .main-container {
+  margin-top: 20px;
+}
+.tobo-btn-primary {
+  color: #fff;
+  background-color: #00796B !important;
+  border-color: #006559 !important;
+}
+.tobo-btn-primary:hover {
+  background-color: #006054 !important;
+  border-color: #00463e !important;
+}
+.tobo-panel-default {
+  border-color: #daefdb !important;
+}
+.tobo-panel-default .tobo-panel-heading {
+  background-color: #E8F5E9 !important;
+  border-color: #daefdb !important;
+}

@@ -1,0 +1,25 @@
+.tobo-menu-component {
+  background-color: transparent;
+  border: 0;
+  margin-top: 20px;
+}
+.tobo-menu-component a {
+  color: #80CBC4 !important;
+}
+.tobo-menu-component .navbar-collapse .navbar-nav li.active a {
+  background-color: #009688 !important;
+  color: #E0F2F1 !important;
+}
+.tobo-menu-component .navbar-collapse .navbar-nav li.open a {
+  background-color: #009688 !important;
+  color: #E0F2F1 !important;
+}
+.tobo-menu-component .navbar-collapse .navbar-nav li.open .dropdown-menu {
+  background-color: #009688 !important;
+  color: #E0F2F1 !important;
+  top: 98%;
+  left: -1px;
+}
+.tobo-menu-component .navbar-collapse .navbar-nav li.open .dropdown-menu .dropdown-header {
+  color: #B2DFDB !important;
+}

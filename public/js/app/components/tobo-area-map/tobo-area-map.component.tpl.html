@@ -1,0 +1,19 @@
+
+<img class="image" width="100%" ng-src="{{ $ctrl.imageSrc }}" alt="">
+<canvas width="100%" id="{{ $ctrl.id }}"></canvas>
+<hr>
+<div class="well well-lg">
+   
+
+    <div class="input-group">     
+      <input type="text" class="form-control" ng-model="$ctrl.coords" placeholder="Coordinates...">
+       <span class="input-group-btn">
+           <button class="btn btn-primary" ng-click="$ctrl.clearCoords()">Clear</button>
+         <button class="btn btn-warning" ng-click="$ctrl.saveCoords()">Save</button>
+
+      </span>
+    </div><!-- /input-group -->
+
+</div>
+
+

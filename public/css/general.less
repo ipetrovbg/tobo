@@ -1,0 +1,23 @@
+@import "../colors";
+body{
+	background-color: @blue-gray-strong;
+	.main-container{
+		margin-top: 20px;
+	}
+}
+.tobo-btn-primary{ 
+	color: #fff;
+    background-color: @teal-700!important;
+    border-color: darken(@teal-700, 4%)!important;
+    &:hover{
+    	background-color: darken(@teal-700, 5%)!important;
+  		border-color: darken(@teal-700, 10%)!important;
+    }
+}
+.tobo-panel-default{ 
+	border-color: darken(@green-50, 4%)!important;
+	.tobo-panel-heading{
+		    background-color: @green-50!important;
+    		border-color: darken(@green-50, 4%)!important;
+	}
+}

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default tobo-menu-component">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ng-href="{{ $ctrl.appUrl }}">{{ $ctrl.appName }}</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a ng-href="{{ $ctrl.appUrl }}">Home</a></li>
+        <!--<li ng-if="$ctrl.user" class=""><a ng-href="{{ $ctrl.appUrl }}/images">Images</a></li>-->
+        <li class="" ng-if="$ctrl.user"><a ng-href="{{ $ctrl.appUrl }}/dashboard">Dashboard</a></li>
+      </ul>
+      <ul ng-if="$ctrl.user" class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ $ctrl.user.name }} <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a ng-href="{{ $ctrl.appUrl }}/tobo-logout">Logout</a></li>
+            </ul>
+          </li>
+      </ul>
+      <ul ng-if="!$ctrl.user" class="nav navbar-nav navbar-right">
+          <li><a ng-href="{{ $ctrl.appUrl }}/login">Login</a></li>
+      </ul>
+
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
